@@ -22,7 +22,11 @@
 	git rm fileName 删除一个文件（git commit 就从git中删除)
 7.连接远程respository(github.com)
 	ssh-keygen -t rsa -C "mail" 创建一个ssh key(文件位于主目录的.ssh文件中id_rsa和id_rsa.pub)
-	
+	登录github网站，在Account settings下ssh keys中将生成的key贴上
+	git remote add originName git@github.com:"you account"/"originRespostitory.git" 创建远程连接（originName)
 
+	git pull originName branchName 拉取远端内容（如有conflict，需处理提交）
+	git push -u originName branchName	将本地内容推送到远端
+	git clone git@github.com:acountName/respostoryName.github克隆远程respostory
 
 
