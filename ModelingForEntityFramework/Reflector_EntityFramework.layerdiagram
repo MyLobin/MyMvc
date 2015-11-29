@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f9588f79-0321-43c1-ba03-98aa293a53c6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="eae6bc30-6d30-4fff-9e9a-94d149767e2f" name="BaseDomain" />
+    <layer Id="fcc63675-7f59-4d51-a640-d46be204994f" name="Person" />
+  </layers>
+</layerModel>

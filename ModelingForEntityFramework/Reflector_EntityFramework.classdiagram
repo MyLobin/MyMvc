@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="24805695-cb40-4b89-8d34-a34e5e928205" name="Reflector_EntityFramework" linkedPackageId="a11ae7d4-d725-4b51-a1a6-59190562c6f7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d7fd3ad6-3253-4575-8a2c-ba61812c97a3">
+      <profileInstance Id="bad51854-8065-4e10-a42a-6b04006b5f6e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="53cebb16-c26c-4dc3-ba8b-2cd9f9bc8acd">
+      <profileInstance Id="124de173-2286-4d50-aeec-3f4acf1d5d32" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2cd308c2-1d4a-406a-bc29-5654da4fb1c8" name="BaseDomain" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dd1f459e-f370-4c87-aac6-fae26aa48b3e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8d03365d-09e2-449a-a198-78d42ed52eb9" name="Person" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="22114a3b-ce24-4c31-ae63-4cfebef0c2ba" />
+        <generalsInternal>
+          <generalization Id="01559f2f-0b01-442b-8fe3-bcc8218b73b7" isSubstitutable="false">
+            <classMoniker Id="2cd308c2-1d4a-406a-bc29-5654da4fb1c8" LastKnownName="BaseDomain" />
+            <elementDefinition Id="9cb19914-d0ff-4b2f-bb28-2eee055174ef" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c80d0e03-245a-49bd-b462-28e88dcd864d" name="BaseDomainMapping" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0e1151eb-cb32-4cae-b7e4-587ce77a0b72" />
+        <suppliersInternal>
+          <dependency Id="2600736b-5b88-4912-8e74-9cd3759a7256">
+            <classMoniker Id="8d03365d-09e2-449a-a198-78d42ed52eb9" LastKnownName="Person" />
+            <elementDefinition Id="395627a3-402a-4804-a446-60a9281584d0" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7c2331f0-e24c-48ea-b0b8-961b4a74f289" name="PersonMappin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="23871438-034c-4809-aa4f-c6f449751d76" />
+        <generalsInternal>
+          <generalization Id="4f6735dc-2cea-43d7-8a11-1a3526506159" isSubstitutable="false">
+            <classMoniker Id="c80d0e03-245a-49bd-b462-28e88dcd864d" LastKnownName="BaseDomainMapping" />
+            <elementDefinition Id="d815c23b-9c02-42c5-9156-bb83928cf7ee" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3d98aa15-b29e-4d62-8b28-06bc202dd8a2" name="IRepository" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2faf8d81-481b-47d3-99bb-89003f227d96" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="31ce3c91-537f-470b-b557-c0dc45375b3d" name="EfRepository" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2ffa7e3-9dde-4bb2-ac77-cda4467b8e91" />
+        <suppliersInternal>
+          <interfaceRealization Id="2bcf632f-9174-457f-a63d-de1ecc945763">
+            <interfaceMoniker Id="3d98aa15-b29e-4d62-8b28-06bc202dd8a2" LastKnownName="IRepository" />
+            <elementDefinition Id="2aa7f6d5-587c-44a0-a74e-d63870be0b45" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5fd8b836-bf3d-4dd3-b57e-3245370ffe94" name="TestContext" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1db01bcb-021e-44ab-9f90-d5247666e355" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a11ae7d4-d725-4b51-a1a6-59190562c6f7" name="ModelingForEntityFramework">
+    <elementDefinition Id="c89df4ed-dabf-4ae2-8e22-82d196121eff" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerDiagram dslVersion="1.0.0.0" Id="5e9e4401-6de0-4223-b654-44049c40cb49" absoluteBounds="0, 0, 11, 8.5" name="Reflector_EntityFramework">
+  <layerModelMoniker Id="f9588f79-0321-43c1-ba03-98aa293a53c6" />
+  <nestedChildShapes>
+    <layerShape Id="dd615e58-3c1c-4d04-b41a-2db889540e51" absoluteBounds="1.125, 3.25, 2, 0.5" customColor="161, 199, 231">
+      <layerMoniker Id="eae6bc30-6d30-4fff-9e9a-94d149767e2f" />
+    </layerShape>
+    <layerShape Id="7f75587c-be83-49d0-9364-0d4b23b0c3bd" absoluteBounds="1.125, 2.25, 2, 0.5" customColor="161, 199, 231">
+      <layerMoniker Id="fcc63675-7f59-4d51-a640-d46be204994f" />
+    </layerShape>
+  </nestedChildShapes>
+</layerDiagram>

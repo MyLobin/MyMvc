@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMVC", "SimpleMVC\SimpleMVC.csproj", "{102B6C6D-C735-4430-98EC-E1F67ED5E224}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 EF", "01 EF", "{48CD3AA4-1DC4-4BE7-B075-C3D7F066EEE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_Test", "Model\EF_Test.csproj", "{354CC995-3121-4B5C-8993-E03719D22589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{837A18CE-2096-4B03-BE69-748E1781C2BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 EF_Advance", "02 EF_Advance", "{9ED42053-548D-41E7-8405-69EEE7178E85}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingForEntityFramework", "ModelingForEntityFramework\ModelingForEntityFramework.modelproj", "{77535B19-83E3-4D0C-A7CA-DCD8F0BFE20B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustForCopy", "JustForCopy\JustForCopy.csproj", "{69DE69FE-90C3-465A-8DC0-1D31F8CFA97F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC_Templet", "MVC_Templet", "{D67EC014-5E51-40AB-9BC3-72610B9F3247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{70AE3CF5-83D6-4A49-B547-55A062F76D38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{102B6C6D-C735-4430-98EC-E1F67ED5E224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102B6C6D-C735-4430-98EC-E1F67ED5E224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102B6C6D-C735-4430-98EC-E1F67ED5E224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102B6C6D-C735-4430-98EC-E1F67ED5E224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{354CC995-3121-4B5C-8993-E03719D22589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354CC995-3121-4B5C-8993-E03719D22589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354CC995-3121-4B5C-8993-E03719D22589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354CC995-3121-4B5C-8993-E03719D22589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837A18CE-2096-4B03-BE69-748E1781C2BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837A18CE-2096-4B03-BE69-748E1781C2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837A18CE-2096-4B03-BE69-748E1781C2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837A18CE-2096-4B03-BE69-748E1781C2BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77535B19-83E3-4D0C-A7CA-DCD8F0BFE20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77535B19-83E3-4D0C-A7CA-DCD8F0BFE20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77535B19-83E3-4D0C-A7CA-DCD8F0BFE20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77535B19-83E3-4D0C-A7CA-DCD8F0BFE20B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69DE69FE-90C3-465A-8DC0-1D31F8CFA97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DE69FE-90C3-465A-8DC0-1D31F8CFA97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DE69FE-90C3-465A-8DC0-1D31F8CFA97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DE69FE-90C3-465A-8DC0-1D31F8CFA97F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70AE3CF5-83D6-4A49-B547-55A062F76D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70AE3CF5-83D6-4A49-B547-55A062F76D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70AE3CF5-83D6-4A49-B547-55A062F76D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70AE3CF5-83D6-4A49-B547-55A062F76D38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{354CC995-3121-4B5C-8993-E03719D22589} = {48CD3AA4-1DC4-4BE7-B075-C3D7F066EEE7}
+		{837A18CE-2096-4B03-BE69-748E1781C2BF} = {48CD3AA4-1DC4-4BE7-B075-C3D7F066EEE7}
+		{77535B19-83E3-4D0C-A7CA-DCD8F0BFE20B} = {9ED42053-548D-41E7-8405-69EEE7178E85}
+		{69DE69FE-90C3-465A-8DC0-1D31F8CFA97F} = {9ED42053-548D-41E7-8405-69EEE7178E85}
+		{70AE3CF5-83D6-4A49-B547-55A062F76D38} = {D67EC014-5E51-40AB-9BC3-72610B9F3247}
+	EndGlobalSection
+EndGlobal
