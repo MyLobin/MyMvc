@@ -1,0 +1,28 @@
+1.创建仓库（版本库）respository
+	mkdir dirName 建立一个目录
+	cd dirName	进入目录
+	pwd	打印当前目录
+	git init	创建respository
+2.加入文件
+	git add fileName 将一个文件加入仓库
+	git commit -m 'description' 将暂存区文件提交到respository
+3.查看respository状态
+	git status 显示respository status
+	git diff fileName 显示文件差异
+4.版本回退
+	git log 查看所有提交记录
+	git reset --hard commitId 返回到commitId时的版本，head^上一个版本
+	git reflog 查看最新版本/每次命令
+5.文件修改撤销
+	git checkout --fileName	将文件修改撤销
+	git reset HEAD fileName 把暂存区的修改撤消
+6.文件删除
+	rm fileName 删除一个文件
+	git checkout fileName 恢复文件
+	git rm fileName 删除一个文件（git commit 就从git中删除)
+7.连接远程respository(github.com)
+	ssh-keygen -t rsa -C "mail" 创建一个ssh key(文件位于主目录的.ssh文件中id_rsa和id_rsa.pub)
+	
+
+
+
