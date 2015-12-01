@@ -1,0 +1,5 @@
+1.Sys is not defined
+	  在web.config中没有节点
+	  <appSettings>
+	  	<add key="UnobtrusiveJavaScriptEnable" value="true"/>
+	  </appSettings>

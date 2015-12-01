@@ -12,5 +12,9 @@ namespace MyMvc.Controllers
         {
             return View();
         }
+        public ActionResult Test()
+        {
+            return Content("test");
+        }
     }
 }
