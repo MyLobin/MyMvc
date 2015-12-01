@@ -43,7 +43,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages`.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -75,12 +75,12 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Web``.config" />
-    <None Include="Web``.Debug.config">
-      <DependentUpon>Web``.config</DependentUpon>
+    <Content Include="Web1.config" />
+    <None Include="Web1.Debug.config">
+      <DependentUpon>Web1.config</DependentUpon>
     </None>
-    <None Include="Web``.Release.config">
-      <DependentUpon>Web``.config</DependentUpon>
+    <None Include="Web1.Release.config">
+      <DependentUpon>Web1.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +128,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
