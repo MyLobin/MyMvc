@@ -4,13 +4,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     var ajaxOption = new AjaxOptions
     {
-        Url = Url.Action("test")
+        Url = Url.Action("test","home"),
+         OnSuccess="onSuccess"
+
     };
 }
-
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
 @*@using (Html.BeginForm("test","home"))*@
 @using (Ajax.BeginForm(ajaxOption))
 {
+    <input type="text" name="txtValue" />
     <button>btn ajax beginForm</button>
     <input type="submit" value="Test" />
 }
+<script>
+    function onSuccess(data) {
+        alert(data);
+    }
+</script>

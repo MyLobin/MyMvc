@@ -28,5 +28,8 @@
 	git pull originName branchName 拉取远端内容（如有conflict，需处理提交）
 	git push -u originName branchName	将本地内容推送到远端
 	git clone git@github.com:acountName/respostoryName.github克隆远程respostory
-
+8.分支
+	git branch 查看所有分支
+	git checkout branchName 切换到指定分支
+	git merge branchName 合并对应分支
 
