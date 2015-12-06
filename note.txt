@@ -3,3 +3,5 @@
 	  <appSettings>
 	  	<add key="UnobtrusiveJavaScriptEnable" value="true"/>
 	  </appSettings>
+2.异步ajax不起作用
+	未引用--jquery.unobtrusive-ajax.js文件

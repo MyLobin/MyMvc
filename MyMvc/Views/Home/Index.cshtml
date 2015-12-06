@@ -9,13 +9,11 @@
 
     };
 }
-<script src="~/Scripts/jquery-1.10.2.js"></script>
-<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
-@*@using (Html.BeginForm("test","home"))*@
+@section head{it's head}
+@section foot{it's foot}
 @using (Ajax.BeginForm(ajaxOption))
 {
     <input type="text" name="txtValue" />
-    <button>btn ajax beginForm</button>
     <input type="submit" value="Test" />
 }
 <script>

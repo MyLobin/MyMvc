@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/content/css")
+    @Scripts.Render("~/bundles/jquery")
 </head>
 <body>
+    <div id="_layout_head">@RenderSection("head", false)</div>
     <div>
         @RenderBody()
     </div>
+    <div id="_layout_foot">@RenderSection("foot", false)</div>
 </body>
 </html>
