@@ -10,13 +10,14 @@ namespace MyEF.Context
 {
     public class ModelContext : DbContext
     {
+        
         public ModelContext() : base("name=context")
         {
-
+            Database.SetInitializer<ModelContext>(new DropCreateDatabaseIfModelChanges<ModelContext>());
         }
         public ModelContext(string connString) : base(connString)
         {
-
+            Database.SetInitializer<ModelContext>(new DropCreateDatabaseIfModelChanges<ModelContext>());
         }
         public DbSet<Employee> Employees { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

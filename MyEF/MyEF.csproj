@@ -57,7 +57,6 @@
     <Compile Include="Implement\ModelService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App1.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -11,7 +11,8 @@ namespace MyMvc.App_Start
     {
         public static void RegistRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("");
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
             routes.MapRoute(
                 name: "default",
                 url: "{controller}/{action}/{id}",

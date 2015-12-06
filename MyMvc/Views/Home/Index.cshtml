@@ -1,4 +1,4 @@
-﻿@*@inherits WebViewPage*@
+﻿@inherits WebViewPage<MyEF.Models.Employee>
 @{
     ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,6 +13,9 @@
 @section foot{it's foot}
 @using (Ajax.BeginForm(ajaxOption))
 {
+    @Html.LabelFor(m=>m.FirstName)
+    @Html.LabelFor(m=>m.LastName)
+
     <input type="text" name="txtValue" />
     <input type="submit" value="Test" />
 }

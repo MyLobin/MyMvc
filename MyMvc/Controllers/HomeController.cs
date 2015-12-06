@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyMvc.Proxy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,9 @@ namespace MyMvc.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var proxy = ModelProxy.CreateService();
+            var model = proxy.GetEmployeeList().FirstOrDefault();
+            return View(model);
         }
         public ActionResult Test()
         {

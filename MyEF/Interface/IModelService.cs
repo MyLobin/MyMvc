@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace MyEF.Host
 {
     [ServiceContract]
-    interface IModelService
+  public  interface IModelService
     {
         [OperationContract]
         List<Employee> GetEmployeeList();
