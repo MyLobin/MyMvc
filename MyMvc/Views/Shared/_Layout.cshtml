@@ -4,14 +4,46 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/content/css")
-    @Scripts.Render("~/bundles/jquery")
+    @*@Styles.Render("~/content/css")*@
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: red;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #_layout_head {
+            background-color: gray;
+            width: auto;
+            height: 20%;
+        }
+
+        #_layout_body {
+            background-color: blue;
+        }
+
+        #_layout_foot {
+            background-color: gray;
+            width: auto;
+            height: 20%;
+        }
+    </style>
+
+
 </head>
 <body>
     <div id="_layout_head">@RenderSection("head", false)</div>
-    <div>
+    <div id="_layout_body">
         @RenderBody()
     </div>
     <div id="_layout_foot">@RenderSection("foot", false)</div>
+
+    @Scripts.Render("~/bundles/jquery")
+
+  
+
 </body>
 </html>
