@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/My97DatePicker/skin/default/datepicker.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Content/My97DatePicker/lang/zh-cn.js"></script>
+    <script src="Content/My97DatePicker/WdatePicker.js"></script>
+</head>
+<body>
+    <div style="width:20px;margin:10px 10px 10px 10px">
+        <input type="text" id="text" class="Wdate" onfocus="WdatePicker({ dateFmt: 'yyyy年MM月dd HH:mm', onpicking:pickedEvent})" />
+    </div>
+    <script>
+   
+        function pickedEvent() {
+            debugger;
+            var min = $dp.cal.newdate.m;
+            if (min < 30) {
+                $dp.cal.newdate.m = 0;
+            } else if (min < 60) {
+                $dp.cal.newdate.m = 30;
+            } 
+        }
+    </script>
+</body>
+</html>

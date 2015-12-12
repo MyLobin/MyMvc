@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Content\demo.htm" />
+    <Content Include="Content\tour.jpg" />
+    <Content Include="jdloginpage.html" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Views\Home\Index.cshtml" />

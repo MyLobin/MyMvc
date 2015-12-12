@@ -1,6 +1,7 @@
 ﻿using MyMvc.Proxy;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,6 +18,7 @@ namespace MyMvc.Controllers
         }
         public ActionResult Test()
         {
+            Trace.TraceError("aaa");
             return Content("test");
         }
     }

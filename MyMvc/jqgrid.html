@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="Content/JqGrid/css/jquery-ui.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+
+    <script src="Content/JqGrid/js/jquery.jqGrid.js"></script>
+
+</head>
+<body>
+    <table id="list"></table>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            mygrid = jQuery("#list").jqGrid({
+
+                url: "/test/query",
+
+                datatype: "json",
+
+                mtype: 'GET',
+
+                colNames: ['id', 'name'],
+
+                colModel: [
+
+                { name: 'Id', index: 'id', width: 40, align: "left", editable: true },
+
+                { name: 'Name', index: 'name', width: 100, align: "center" }
+                ],
+                loadComplete: function (xhr) {
+                    completeFunc(xhr);
+                },
+                onSelectRow: function (id, status) {
+                    onSelectRowFunc(id, status);
+                },
+                onSelectAll: function (aRowids, status) {
+                    onSelectAllFunc(aRowids, status);
+                },
+                rowList: [5, 10, 20],
+
+                sortname: 'SalesReasonID',
+
+                viewrecords: true,
+
+                sortorder: "desc",
+                multiselect: true,
+
+                jsonReader: {
+
+                    root: "gridData",
+
+                    total: "totalpages",
+
+                    page: "currpage",
+
+                    records: "totalrecords",
+
+                    repeatitems: false
+
+                },
+
+                pager: jQuery('#pager'),
+
+                rowNum: 5,
+
+                altclass: 'altRowsColour',
+
+                //width: 'auto',
+                //height:'auto',
+
+                width: '1000',
+
+                height: '200',
+
+                caption: "MyFirst JqGrid"
+
+            }).navGrid('#pager', { edit: false, add: false, del: false, search: false })
+
+        .navButtonAdd('#pager', {
+
+            caption: "Add",
+
+            buttonicon: "ui-icon-add",
+
+            onClickButton: function () {
+
+                alert("Adding Row");
+
+            },
+
+            position: "last"
+
+        })
+
+        .navButtonAdd('#pager', {
+
+            caption: "Del",
+
+            buttonicon: "ui-icon-del",
+
+            onClickButton: function () {
+
+                alert("Deleting Row");
+
+            },
+
+            position: "last"
+
+        });
+
+
+
+        });
+
+
+
+    </script>
+
+</body>
+</html>
