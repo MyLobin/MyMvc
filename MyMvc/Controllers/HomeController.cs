@@ -18,6 +18,8 @@ namespace MyMvc.Controllers
         }
         public ActionResult Test()
         {
+            int b = 0;
+            int a = 1 / b;
             Trace.TraceError("aaa");
             return Content("test");
         }

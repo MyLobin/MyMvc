@@ -3,8 +3,11 @@ using MyEF.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Messaging;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TestConsole
@@ -13,17 +16,55 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
+            //Expression<Func<int, int, int>> expression = (a,b) => a + b;
 
-            //ModelService service = new ModelService();
-            //var list=service.GetEmployeeList();
-            //foreach (var item in list)
+            //BinaryExpression body = (BinaryExpression)expression.Body;
+            //ParameterExpression left = (ParameterExpression)body.Left;
+            //ParameterExpression right = (ParameterExpression)body.Right;
+
+            //var fun=expression.Compile();
+
+
+
+            //int c = fun(2, 3);
+            //Console.WriteLine(TimeSpan.MinValue);
+            //var key = Console.ReadKey().Key;
+            //if (key == ConsoleKey.A)
             //{
-            //    Console.WriteLine(item.FirstName);
+            //    Console.WriteLine("A");
+            //    while (true)
+            //    {
+            //        Thread.Sleep(1000);
+            //        var msg = Consumer.Receive();
+            //            if(string.IsNullOrEmpty(msg))
+            //                msg="^_^";
+            //        Console.WriteLine(msg);
+            //    }
+               
             //}
-            ///Additional information: 在 ServiceModel 客户端配置部分中，找不到名称“getEmployeeList”和协定“TestConsole.IModelService”的终结点元素。这可能是因为未找到应用程序的配置文件，或者是因为客户端元素中找不到与此名称匹配的终结点元素。
-            var proxy = new ChannelFactory<IModelService>("getEmployeeList");
-            var list = proxy.CreateChannel().GetEmployeeList();
+            //Console.WriteLine("发送！");
+            //while (true)
+            //{
+            //    var msg = Console.ReadLine();
+            //    Producer.Send(msg);
+            //}
+
+            MSMQ.Createqueue(@"FormatName:DIRECT=tcp:192.168.1.103\private$\Email");
+            Console.WriteLine(MSMQ.Msg);
+            Thread.Sleep(2000);
+            MSMQ.SendMessage("just send");
+            Console.WriteLine("send!");
+            Thread.Sleep(2000);
+            var msg=MSMQ.ReceiveMessage();
+            Console.WriteLine(msg);
+            
+
             Console.ReadKey();
+
+
+
+
+       
         }
     }
 }
